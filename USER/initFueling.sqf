@@ -14,19 +14,9 @@ if (hasInterface) then {
     private _westGroup = missionNamespace getVariable ["FF_groupWest", grpNull];
     private _eastGroup = missionNamespace getVariable ["FF_groupEast", grpNull];
     private _independentGroup = missionNamespace getVariable ["FF_groupIndependent", grpNull];
-    private _civilianGroup = missionNamespace getVariable ["FF_groupCivilian", grpNull];
 
     private _originalSide = [player, true] call BIS_fnc_objectSide;
     player setVariable ["FF_originalSide", _originalSide, true];
-
-    switch (_originalSide) do {
-        case west : {  [player] joinSilent _westGroup; }; 
-        case east : {  [player] joinSilent _eastGroup; }; 
-        case independent : {  [player] joinSilent _independentGroup; }; 
-        case civilian : {  [player] joinSilent _civilianGroup; }; 
-        default {diag_log "client: error in originalSide: none of the sides!"; }; 
-    };
-
     
     [
         player, [player] call refuel_fnc_getFace
@@ -158,8 +148,7 @@ if (hasInterface) then {
         // show hint if fuel is sold
         if (_sourceObject == fuelSellPoint_west ||
             _sourceObject == fuelSellPoint_east || 
-            _sourceObject == fuelSellPoint_independent || 
-            _sourceObject == fuelSellPoint_civilian
+            _sourceObject == fuelSellPoint_independent
            ) then {
             [
                 {
@@ -192,8 +181,7 @@ if (hasInterface) then {
     } forEach [
         ["mrk_safeZone_west", west],
         ["mrk_safeZone_east", east],
-        ["mrk_safeZone_independent", independent],
-        ["mrk_safeZone_civilian", civilian]
+        ["mrk_safeZone_independent", independent]
     ];
 
 };
@@ -215,11 +203,6 @@ if (isServer) then {
         fuelSellPoint_independent setVariable ["ace_refuel_fuelMaxCargo", 1000000, true];
         fuelSellPoint_independent setVariable ["ace_refuel_cargoRate", 200, true];
         fuelSellPoint_independent setVariable ["FF_sellingPoint", independent, true];
-
-        // [fuelSellPoint_civilian, 0] call ace_refuel_fnc_makeSource;
-        fuelSellPoint_civilian setVariable ["ace_refuel_fuelMaxCargo", 1000000, true];
-        fuelSellPoint_civilian setVariable ["ace_refuel_cargoRate", 200, true];
-        fuelSellPoint_civilian setVariable ["FF_sellingPoint", civilian, true];
     
         [] call refuel_fnc_fuelBusLoop;
 
@@ -251,7 +234,7 @@ if (isServer) then {
                 private _currentTime = [dayTime, "HH:MM"] call BIS_fnc_timeToString;
                 _fuelStation setVariable [_fuelKnownFormat, _fuelCargo, true];
                 _fuelStation setVariable [_fuelKnownTimeFormat, _currentTime, true];
-            } forEach [west, east, independent, civilian];
+            } forEach [west, east, independent];
 
             private _marker = createMarker [format ["fuelstation_%1", _position], _position];
             _marker setMarkerShape "ICON";
@@ -272,21 +255,10 @@ if (isServer) then {
         private _independentGroup = createGroup east;
         missionNamespace setVariable ["FF_groupIndependent", _independentGroup, true];
         publicVariable "FF_groupIndependent";
-        private _civilianGroup = createGroup east;
-        missionNamespace setVariable ["FF_groupCivilian", _civilianGroup, true];
-        publicVariable "FF_groupCivilian";
 
         {
             private _originalSide = [_x, true] call BIS_fnc_objectSide;
             _x setVariable ["FF_originalSide", _originalSide, true];
-
-            switch (_originalSide) do {
-                case west : {  [_x] joinSilent _westGroup; }; 
-                case east : {  [_x] joinSilent _eastGroup; }; 
-                case independent : {  [_x] joinSilent _independentGroup; }; 
-                case civilian : {  [_x] joinSilent _civilianGroup; }; 
-                default {diag_log "server:error in originalSide: none of the sides!"; }; 
-            };
 
         } forEach (playableUnits + switchableUnits);
 };

@@ -18,7 +18,6 @@ switch (_playerSide) do {
     case west : { _respawnMarker = "respawn_west"; }; 
     case east : { _respawnMarker = "respawn_east"; };
     case independent : { _respawnMarker = "respawn_independent"; };
-    case civilian : { _respawnMarker = "respawn_civilian"; };
     default { diag_log ("onPlayerRespawn: no playerside matching!" + str _playerSide); }; 
 };
 

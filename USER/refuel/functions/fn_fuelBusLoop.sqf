@@ -7,6 +7,5 @@
 } forEach [
     [fuelBusSpawn_west, west],
     [fuelBusSpawn_east, east],
-    [fuelBusSpawn_independent, independent],
-    [fuelBusSpawn_civilian, civilian]
+    [fuelBusSpawn_independent, independent]
 ];
