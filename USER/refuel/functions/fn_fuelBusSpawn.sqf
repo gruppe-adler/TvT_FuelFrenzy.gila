@@ -74,15 +74,28 @@ _bus setVariable ["ace_refuel_nozzle", _bus, true]; // hack to hide CONNECT acti
 _bus setVariable ["FF_originalSide", _side, true];
 _bus setVariable ["FF_trackedForSide", _side, true];
 
-// remove GM insignia
-_bus setObjectTextureGlobal [25, ""]; // mission
-_bus setObjectTextureGlobal [26, ""]; // mission large
-_bus setObjectTextureGlobal [27, ""]; // formation
-_bus setObjectTextureGlobal [28, ""]; // crest
-_bus setObjectTextureGlobal [29, ""]; // company
-_bus setObjectTextureGlobal [30, ""]; // marking 
-_bus setObjectTextureGlobal [32, ""]; // nation
-_bus setObjectTextureGlobal [33, ""]; // nation 2
+
+[{
+  params ["_bus"];
+  // remove GM insignia
+  _bus setObjectTextureGlobal [25, ""]; // mission
+  _bus setObjectTextureGlobal [26, ""]; // mission large
+  _bus setObjectTextureGlobal [27, ""]; // formation
+  _bus setObjectTextureGlobal [28, ""]; // crest
+  _bus setObjectTextureGlobal [29, ""]; // company
+  _bus setObjectTextureGlobal [30, ""]; // marking 
+  _bus setObjectTextureGlobal [32, ""]; // nation
+  _bus setObjectTextureGlobal [33, ""]; // nation 2
+},[_bus], 1] call CBA_fnc_waitAndExecute;
+
+private _texture = {
+  switch (_side) do { 
+    case west : {  "USER\refuel\fueltruck_ldf3.paa" }; 
+    case east : {  "#(rgb,8,8,3)color(0.01,0.01,0.05,1)" }; 
+    case independent : {  "USER\refuel\fueltruck_ldf3.paa" };
+    default {  /*...code...*/ }; 
+  };
+};
 
 
 private _existingBusses = missionNamespace getVariable ["FF_fuelTrucks", []];
