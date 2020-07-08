@@ -1,6 +1,6 @@
 class mafia_rus {
     class AllUnits {
-        uniform[] = {"rds_uniform_Woodlander1", "rds_uniform_Woodlander2", "rds_uniform_Woodlander3", "rds_uniform_Woodlander4", "rds_uniform_rocker1", "rds_uniform_rocker2", "rds_uniform_rocker3", "rds_uniform_Woodlander1", "rds_uniform_Woodlander2", "rds_uniform_Woodlander3", "rds_uniform_Woodlander4"};
+        uniform[] = {"U_I_E_Uniform_01_officer_F"};
         vest = "V_Chestrig_oli";
         backpack = "rhs_assault_umbts";
         headgear[] = {"rds_Woodlander_cap1", "rds_Woodlander_cap2", "rds_Woodlander_cap3", "rds_Woodlander_cap4", "rhs_beanie_green", "H_Booniehat_oli"};
