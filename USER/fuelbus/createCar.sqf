@@ -2,7 +2,7 @@ params ["_type", "_pos", "_dir", "_side"];
 
 _pos params ["_posX", "_posY"];
 
-private _busType = "RDS_Ikarus_Civ_01";
+private _busType = "gm_gc_army_ural44202";
 private _carType = "Car";
 
 private _nearBusses = nearestObjects [_pos, [_busType, _carType], 30];
@@ -34,3 +34,12 @@ if (_bussesNear) exitWith {
 
 private _vehicle = createVehicle [_type, [_posX, _posY, 2], [], 0, "CAN_COLLIDE"];
 _vehicle setDir _dir;
+
+
+if (_type == "UK3CB_CHC_C_Pickup") then {
+    if (_side == west) then {
+        [_vehicle,["ADM_1",1], true] call BIS_fnc_initVehicle;
+    } else {
+        [_vehicle,["CHDZZ",1], true] call BIS_fnc_initVehicle;
+    };
+};

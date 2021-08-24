@@ -1,8 +1,8 @@
-params ["_classname", "_vehicle", "_helper", "_side"];
+params ["_classname", "_vehicle", "_helper", "_side", ["_string", "Spawn Car"]];
 
 private _addSpawnAction = [
     "AddSpawn",
-    "Spawn Car",
+    _string,
     "",
     {
         params ["_target", "_player", "_params"];

@@ -158,9 +158,9 @@ private _fuelSellPointControls = [];
 } forEach [
     fuelSellPoint_west,
     fuelSellPoint_east,
-    fuelSellPoint_independent,
-    fuelSellPoint_civilian
+    fuelSellPoint_independent
 ];
+// fuelSellPoint_civilian
 
 uiNamespace setVariable ["FF_fuelSellPointControls", _fuelSellPointControls];
 
