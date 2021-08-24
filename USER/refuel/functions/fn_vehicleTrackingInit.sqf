@@ -18,7 +18,7 @@ if (isDedicated) exitWith {};
                 
                 private _flagTexture = call {
                     switch (_side) do { 
-                      case west : {  "\UK3CB_Factions\addons\UK3CB_Factions_ADA\flag\ada_army_flag_co.paa" }; 
+                      case west : {  "\UK3CB_Factions\addons\UK3CB_Factions_TKM\Flag\tkm_o_flag_co.paa" }; 
                       case east : {  "\UK3CB_Factions\addons\UK3CB_Factions_CHC\Flag\CHC_flag_co.paa" }; 
                       case independent : {  "\A3\Data_F_Exp\Flags\flag_VIPER_CO.paa" };
                       default { "" }; 
