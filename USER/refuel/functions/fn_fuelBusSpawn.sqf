@@ -68,13 +68,14 @@ _bus setDir _dir;
   if (_type == "rhs_Flag_chdkz") then {
       private _flagTexture = call {
         switch (_side) do { 
-          case west : {  "\a3\Data_F_Enoch\Flags\flag_EAF_CO.paa" }; 
-          case east : {  "\gm\gm_core\data\flags\gm_flag_IT_co.paa" }; 
+          case west : {  "\UK3CB_Factions\addons\UK3CB_Factions_ADA\flag\ada_army_flag_co.paa" }; 
+          case east : {  "\UK3CB_Factions\addons\UK3CB_Factions_CHC\Flag\CHC_flag_co.paa" }; 
           case independent : {  "\A3\Data_F_Exp\Flags\flag_VIPER_CO.paa" };
           default { "" }; 
         };
       };
       _attachment setFlagTexture _flagTexture;
+      _bus setVariable ["FF_fuelBusFlag", _attachment, true];
   };
   
 } forEach _objectsArray;

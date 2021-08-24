@@ -8,7 +8,7 @@ class EditorData
 	toggles=553;
 	class ItemIDProvider
 	{
-		nextID=4161;
+		nextID=4173;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6783.5737,151.19202,740.25201};
-		dir[]={0.47853649,-0.52695698,0.70237404};
-		up[]={0.29670423,0.84989095,0.43548945};
-		aside[]={0.82642448,1.3591489e-008,-0.56305438};
+		pos[]={410.42615,106.85321,7234.8647};
+		dir[]={-0.36738047,-0.51383072,-0.77525812};
+		up[]={-0.2200419,0.85788858,-0.46433952};
+		aside[]={-0.90367788,-4.2840838e-008,0.42823529};
 	};
 };
 binarizationWanted=0;
@@ -107,16 +107,17 @@ addons[]=
 	"A3_Structures_F_Items_Electronics",
 	"A3_Structures_F_System",
 	"A3_Structures_F_Training",
-	"A3_Structures_F_Enoch_Military_Flags",
 	"A3_Soft_F_Enoch_Offroad_01",
 	"UK3CB_Factions_Vehicles_Motorbikes",
-	"UK3CB_Factions_CHC_C"
+	"UK3CB_Factions_CHC_C",
+	"UK3CB_Factions_ADA",
+	"UK3CB_Factions_CHC"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=54;
+		items=55;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -479,6 +480,13 @@ class AddonsMetaData
 		{
 			className="UK3CB_Factions_CHC";
 			name="3CB Factions - CHC";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
+		class Item54
+		{
+			className="UK3CB_Factions_ADA";
+			name="3CB Factions - ADA";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
@@ -4835,7 +4843,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=467;
+		items=468;
 		class Item0
 		{
 			dataType="Layer";
@@ -30615,22 +30623,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6768.5615,134.11237,758.34088};
-				angles[]={0,4.8345623,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-			};
-			id=4042;
-			type="Flag_Enoch_F";
-		};
-		class Item450
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={10240.984,89.955864,10224.063};
 				angles[]={0.01999305,2.1642082,0};
 			};
@@ -31205,7 +31197,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item451
+		class Item450
 		{
 			dataType="Object";
 			class PositionInfo
@@ -31784,7 +31776,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item452
+		class Item451
 		{
 			dataType="Object";
 			class PositionInfo
@@ -32363,7 +32355,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item453
+		class Item452
 		{
 			dataType="Object";
 			class PositionInfo
@@ -32942,7 +32934,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item454
+		class Item453
 		{
 			dataType="Object";
 			class PositionInfo
@@ -33604,7 +33596,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item455
+		class Item454
 		{
 			dataType="Object";
 			class PositionInfo
@@ -33621,7 +33613,7 @@ class Mission
 			type="UK3CB_C_YAVA";
 			atlOffset=-0.00030517578;
 		};
-		class Item456
+		class Item455
 		{
 			dataType="Object";
 			class PositionInfo
@@ -33638,7 +33630,7 @@ class Mission
 			type="UK3CB_C_YAVA";
 			atlOffset=1.5258789e-005;
 		};
-		class Item457
+		class Item456
 		{
 			dataType="Object";
 			class PositionInfo
@@ -33655,7 +33647,7 @@ class Mission
 			type="UK3CB_C_YAVA";
 			atlOffset=-9.1552734e-005;
 		};
-		class Item458
+		class Item457
 		{
 			dataType="Object";
 			class PositionInfo
@@ -33672,7 +33664,7 @@ class Mission
 			id=4152;
 			type="UK3CB_CHC_C_Pickup";
 		};
-		class Item459
+		class Item458
 		{
 			dataType="Object";
 			class PositionInfo
@@ -33689,7 +33681,7 @@ class Mission
 			id=4153;
 			type="UK3CB_CHC_C_Pickup";
 		};
-		class Item460
+		class Item459
 		{
 			dataType="Object";
 			class PositionInfo
@@ -33706,7 +33698,7 @@ class Mission
 			id=4154;
 			type="UK3CB_CHC_C_Pickup";
 		};
-		class Item461
+		class Item460
 		{
 			dataType="Object";
 			class PositionInfo
@@ -33721,9 +33713,9 @@ class Mission
 			};
 			id=4155;
 			type="UK3CB_CHC_C_TT650";
-			atlOffset=-3.0517578e-005;
+			atlOffset=-0.0012512207;
 		};
-		class Item462
+		class Item461
 		{
 			dataType="Object";
 			class PositionInfo
@@ -33740,7 +33732,7 @@ class Mission
 			type="UK3CB_CHC_C_TT650";
 			atlOffset=-3.0517578e-005;
 		};
-		class Item463
+		class Item462
 		{
 			dataType="Object";
 			class PositionInfo
@@ -33757,7 +33749,7 @@ class Mission
 			type="UK3CB_CHC_C_TT650";
 			atlOffset=-3.0517578e-005;
 		};
-		class Item464
+		class Item463
 		{
 			dataType="Object";
 			class PositionInfo
@@ -33773,8 +33765,9 @@ class Mission
 			};
 			id=4158;
 			type="UK3CB_CHC_C_Pickup";
+			atlOffset=-9.1552734e-005;
 		};
-		class Item465
+		class Item464
 		{
 			dataType="Object";
 			class PositionInfo
@@ -33790,8 +33783,9 @@ class Mission
 			};
 			id=4159;
 			type="UK3CB_CHC_C_Pickup";
+			atlOffset=-1.5258789e-005;
 		};
-		class Item466
+		class Item465
 		{
 			dataType="Object";
 			class PositionInfo
@@ -33807,6 +33801,38 @@ class Mission
 			};
 			id=4160;
 			type="UK3CB_CHC_C_Pickup";
+			atlOffset=-1.5258789e-005;
+		};
+		class Item466
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6770.0815,134.1391,759.90314};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=4165;
+			type="Flag_ADA_Army";
+		};
+		class Item467
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={434.33817,101.8569,7229.4727};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=4172;
+			type="Flag_CHC";
+			atlOffset=1.5258789e-005;
 		};
 	};
 	class Connections
