@@ -208,7 +208,7 @@ if (isServer) then {
 
         // private _fuelStations = nearestTerrainObjects [[worldSize/2, worldSize/2], ["Fuelstation"], worldSize/2] select { !isObjectHidden _x};
         
-        private _fuelStations = nearestObjects [[worldsize/2, worldsize/2], ["Land_fs_feed_F"], worldsize/2];
+        private _fuelStations = nearestObjects [[worldsize/2, worldsize/2], ["Land_Ind_FuelStation_Feed_EP1"], worldsize/2];
 
         {
             private _fuelStation = _x;

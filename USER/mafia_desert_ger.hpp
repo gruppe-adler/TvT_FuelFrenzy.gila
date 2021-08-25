@@ -38,13 +38,11 @@ class mafia_desert_ger {
             "ACE_key_lockpick",
             "ACE_key_east"
         };
-        addItemsToVest[] = {};
-        addItemsToBackpack[] = {};
     };
     class Type {
         //Rifleman
         class man_1 {
-            addItemsToBackpack[] = {
+            addItemsToVest[] = {
                 LIST_7("rhs_30Rnd_545x39_7N6M_plum_AK"),
                 LIST_2("rhs_mag_rdg2_white"),
                 LIST_2("rhs_mag_rgd5")

@@ -1,6 +1,6 @@
 class mafia_chin {
     class AllUnits {
-        uniform[] = {"U_I_C_Soldier_Para_5_F", "U_I_C_Soldier_Bandit_4_F", "U_I_C_Soldier_Bandit_1_F", "U_I_C_Soldier_Bandit_5_F", "U_C_Poloshirt_blue", "U_C_Poloshirt_salmon", "rds_uniform_schoolteacher"};
+        uniform[] = {"U_I_C_Soldier_Para_5_F", "U_I_C_Soldier_Bandit_4_F", "U_I_C_Soldier_Bandit_1_F", "U_I_C_Soldier_Bandit_5_F", "U_C_Poloshirt_blue", "U_C_Poloshirt_salmon"};
         vest = "V_Chestrig_khk";
         backpack = "rhs_sidor";
         headgear[] = {"rhssaf_booniehat_woodland", "rhs_Booniehat_m81", "H_Hat_brown", "H_Hat_grey", "H_Booniehat_oli", "H_Booniehat_tan", "H_Booniehat_khk_hs", "H_Bandanna_sgg", "H_Bandanna_sand"};

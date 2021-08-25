@@ -121,7 +121,7 @@ missionNamespace setVariable ["FF_fuelTrucks", _existingBusses, true];
 
 [{
     params ["_bus"];
-    !((_bus getVariable ["FF_trackedForSide",sideUnknown]) isEqualTo (_bus getVariable ["FF_originalSide",sideUnknown])) ||
+    ((_bus getVariable ["FF_trackedForSide",sideUnknown]) isNotEqualTo (_bus getVariable ["FF_originalSide",sideUnknown])) ||
     !alive _bus
 },{
     params ["_bus", "_side", "_pos", "_dir"];
@@ -136,7 +136,7 @@ missionNamespace setVariable ["FF_fuelTrucks", _existingBusses, true];
     _fuelBussesNoRespawn pushBackUnique _bus;
     missionNamespace setVariable ["FF_fuelTrucksNoRespawn", _fuelBussesNoRespawn, true];
 
-     [_side, _pos, _dir] call refuel_fnc_fuelBusSpawn;
+    [_side, _pos, _dir] call refuel_fnc_fuelBusSpawn;
 }, [_bus, _side, _pos, _dir]] call CBA_fnc_waitUntilAndExecute;
 
 // call (uiNamespace getVariable ["ace_refuel_cacheRefuelClasses", {[[],[]]}]); 

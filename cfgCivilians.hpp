@@ -71,16 +71,6 @@ class cfgCivilians {
             "C_Offroad_01_repair_F",
             "C_Quadbike_01_F",
             "C_Van_01_transport_F",
-            "RDS_Gaz24_Civ_03",
-            "RDS_Gaz24_Civ_01",
-            "RDS_Gaz24_Civ_02",
-            "RDS_S1203_Civ_01",
-            "RDS_Zetor6945_Base",
-            "RDS_Lada_Civ_01",
-            "RDS_Lada_Civ_03",
-            "RDS_Lada_Civ_02",
-            "RDS_tt650_Civ_01",
-            "RDS_JAWA353_Civ_01",
             "RHS_Ural_Civ_01",
             "RHS_Ural_Open_Civ_02"
         };
@@ -88,41 +78,10 @@ class cfgCivilians {
 
     class russian {
         clothes[] = {
-            "rds_uniform_citizen1",
-            "rds_uniform_citizen2",
-            "rds_uniform_citizen3",
-            "rds_uniform_citizen4",
-            "rds_uniform_Functionary1",
-            "rds_uniform_Profiteer1",
-            "rds_uniform_Profiteer2",
-            "rds_uniform_Profiteer3",
-            "rds_uniform_Profiteer4",
-            "rds_uniform_Rocker2",
-            "rds_uniform_schoolteacher",
-            "rds_uniform_Villager1",
-            "rds_uniform_Villager2",
-            "rds_uniform_Villager3",
-            "rds_uniform_Villager4",
-            "rds_uniform_Woodlander1",
-            "rds_uniform_Woodlander2",
-            "rds_uniform_Woodlander3",
-            "rds_uniform_Woodlander4",
-            "rds_uniform_Worker1",
-            "rds_uniform_Worker2",
-            "rds_uniform_Worker3",
-            "rds_uniform_Worker4"
+            "U_I_C_Soldier_Para_5_F"
         };
 
         headgear[] = {
-            "rds_Profiteer_cap4",
-            "rds_Profiteer_cap2",
-            "rds_Woodlander_cap1",
-            "rds_Woodlander_cap3",
-            "rds_Villager_cap1",
-            "rds_Villager_cap4",
-            "rds_worker_cap3",
-            "rds_worker_cap4",
-
             "H_Cap_blk",
             "H_Cap_grn",
             "H_Cap_red",
@@ -166,16 +125,6 @@ class cfgCivilians {
             "C_Truck_02_transport_F",
             "C_Truck_02_covered_F",
             "C_Van_01_transport_F",
-            "RDS_Gaz24_Civ_03",
-            "RDS_Gaz24_Civ_01",
-            "RDS_Gaz24_Civ_02",
-            "RDS_S1203_Civ_01",
-            "RDS_Zetor6945_Base",
-            "RDS_Lada_Civ_01",
-            "RDS_Lada_Civ_03",
-            "RDS_Lada_Civ_02",
-            "RDS_tt650_Civ_01",
-            "RDS_JAWA353_Civ_01",
             "RHS_Ural_Civ_01",
             "RHS_Ural_Open_Civ_02"
         };
