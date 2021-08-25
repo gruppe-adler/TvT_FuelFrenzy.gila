@@ -6,9 +6,9 @@ class mafia_desert_rus {
         headgear[] = {"UK3CB_TKP_I_H_SSh68_BLK"};
         goggles = "";
 
-        primaryWeapon = "rhsusf_weap_MP7A2";
+        primaryWeapon = "rhs_weap_aks74n";
         primaryWeaponOptics = "";
-        primaryWeaponMagazine = "rhsusf_mag_40Rnd_46x30_FMJ";
+        primaryWeaponMagazine = "rhs_30Rnd_545x39_7N6M_plum_AK";
         primaryWeaponPointer = "";
         primaryWeaponMuzzle = "";
         primaryWeaponUnderbarrel = "";
@@ -45,7 +45,7 @@ class mafia_desert_rus {
         //Rifleman
         class Soldier_F {
             addItemsToBackpack[] = {
-                LIST_7("rhsusf_mag_40Rnd_46x30_FMJ"),
+                LIST_7("rhs_30Rnd_545x39_7N6M_plum_AK"),
                 LIST_2("rhs_mag_rdg2_white"),
                 LIST_2("rhs_mag_rgd5")
             };
@@ -54,7 +54,7 @@ class mafia_desert_rus {
         //Asst. Autorifleman
         class soldier_AAR_F: Soldier_F {
             addItemsToVest[] = {
-                LIST_7("rhsusf_mag_40Rnd_46x30_FMJ"),
+                LIST_7("rhs_30Rnd_545x39_7N6M_plum_AK"),
                 LIST_2("rhs_mag_rgd5"),
                 LIST_1("rhs_mag_rdg2_white")
             };
@@ -91,10 +91,10 @@ class mafia_desert_rus {
         //Team Leader
         class Soldier_TL_F: Soldier_F {
             
-            primaryWeapon = "rhsusf_weap_MP7A2";
+            primaryWeapon = "rhs_weap_aks74n";
 
             addItemsToBackpack[] = {
-                LIST_7("rhsusf_mag_40Rnd_46x30_FMJ"),
+                LIST_7("rhs_30Rnd_545x39_7N6M_plum_AK"),
                 LIST_2("rhs_mag_rdg2_white"),
                 LIST_2("rhs_mag_rgd5")
             };

@@ -6,9 +6,9 @@ class mafia_desert_ger {
         headgear[] = {"UK3CB_ANA_B_H_6b27m_ESS_WDL"};
         goggles[] = {"TRYK_Beard", "TRYK_Beard", "TRYK_Beard_BW", "TRYK_Beard2", "TRYK_Beard_BW2"};
 
-        primaryWeapon = "rhsusf_weap_MP7A2";
+        primaryWeapon = "rhs_weap_aks74n";
         primaryWeaponOptics = "";
-        primaryWeaponMagazine = "rhsusf_mag_40Rnd_46x30_FMJ";
+        primaryWeaponMagazine = "rhs_30Rnd_545x39_7N6M_plum_AK";
         primaryWeaponPointer = "";
         primaryWeaponMuzzle = "";
         primaryWeaponUnderbarrel = "";
@@ -45,7 +45,7 @@ class mafia_desert_ger {
         //Rifleman
         class man_1 {
             addItemsToBackpack[] = {
-                LIST_7("rhsusf_mag_40Rnd_46x30_FMJ"),
+                LIST_7("rhs_30Rnd_545x39_7N6M_plum_AK"),
                 LIST_2("rhs_mag_rdg2_white"),
                 LIST_2("rhs_mag_rgd5")
             };
@@ -54,7 +54,7 @@ class mafia_desert_ger {
         //Asst. Autorifleman
         class man_sport_1_F: man_1 {
             addItemsToVest[] = {
-                LIST_7("rhsusf_mag_40Rnd_46x30_FMJ"),
+                LIST_7("rhs_30Rnd_545x39_7N6M_plum_AK"),
                 LIST_2("rhs_mag_rgd5"),
                 LIST_1("rhs_mag_rdg2_white")
             };
@@ -92,7 +92,7 @@ class mafia_desert_ger {
         class Man_casual_1_F: man_1 {
 
             addItemsToBackpack[] = {
-                LIST_7("rhsusf_mag_40Rnd_46x30_FMJ"),
+                LIST_7("rhs_30Rnd_545x39_7N6M_plum_AK"),
                 LIST_2("rhs_mag_rdg2_white"),
                 LIST_2("rhs_mag_rgd5")
             };
