@@ -38,10 +38,11 @@ class mafia_desert_ger {
             "ACE_key_lockpick",
             "ACE_key_east"
         };
+
     };
     class Type {
         //Rifleman
-        class man_1 {
+        class Soldier_F {
             addItemsToVest[] = {
                 LIST_7("rhs_30Rnd_545x39_7N6M_plum_AK"),
                 LIST_2("rhs_mag_rdg2_white"),
@@ -50,7 +51,7 @@ class mafia_desert_ger {
         };
 
         //Asst. Autorifleman
-        class man_sport_1_F: man_1 {
+        class man_sport_1_F: Soldier_F {
             addItemsToVest[] = {
                 LIST_7("rhs_30Rnd_545x39_7N6M_plum_AK"),
                 LIST_2("rhs_mag_rgd5"),
@@ -62,7 +63,7 @@ class mafia_desert_ger {
         };
 
         //Autorifleman
-        class man_sport_2_F: man_1 {
+        class man_sport_2_F: Soldier_F {
             primaryWeapon = "rhs_weap_aks74u";
             primaryWeaponMagazine = "rhs_30Rnd_545x39_AK_green";
             addItemsToBackpack[] = {
@@ -71,7 +72,7 @@ class mafia_desert_ger {
         };
 
         //Combat Life Saver
-        class man_p_beggar_F: man_1 {
+        class medic_F: Soldier_F {
             addItemsToVest[] = {
                 LIST_15("ACE_fieldDressing"),
                 LIST_8("ACE_morphine"),
@@ -82,12 +83,12 @@ class mafia_desert_ger {
         };
 
         //Rifleman (AT)
-        class man_sport_3_F: man_1 {
+        class man_sport_3_F: Soldier_F {
             secondaryWeapon = "rhs_weap_rpg26";
         };
 
         //Squad Leader
-        class Man_casual_1_F: man_1 {
+        class Man_casual_1_F: Soldier_F {
 
             addItemsToBackpack[] = {
                 LIST_7("rhs_30Rnd_545x39_7N6M_plum_AK"),
@@ -97,7 +98,7 @@ class mafia_desert_ger {
         };
 
         //Team Leader
-        class Man_casual_2_F: Man_casual_1_F {
+        class Soldier_SL_F: Man_casual_1_F {
             uniform = "rhsgref_uniform_gorka_1_f";
         };
     };

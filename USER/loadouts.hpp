@@ -16,8 +16,8 @@
 
 
 loadoutFactionBlu = "mafia_rus";
-loadoutFactionOpf = "mafia_it";
-loadoutFactionInd = "mafia_chin";
+loadoutFactionOpf = "mafia_rus";
+loadoutFactionInd = "mafia_ger";
 loadoutFactionCiv = "mafia_ger";
 
 
