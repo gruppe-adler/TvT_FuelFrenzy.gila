@@ -5607,7 +5607,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
-								description="Commander@RussianMafia";
+								description="Commander@Raiders";
 								isPlayer=1;
 								isPlayable=1;
 							};
@@ -7223,7 +7223,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
-								description="Commander@ItalianMafia";
+								description="Commander@Vipers";
 								isPlayable=1;
 							};
 							id=1568;
@@ -8825,7 +8825,7 @@ class Mission
 							flags=2;
 							class Attributes
 							{
-								description="Commander@ChineseMafia";
+								description="Commander@DontSlotHere";
 								isPlayable=1;
 							};
 							id=1640;
