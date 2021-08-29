@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1779;
+		nextID=1811;
 	};
 	class Camera
 	{
-		pos[]={4931.8037,663.17804,5000.0127};
-		dir[]={-0.58302259,-0.66296065,-0.46966735};
-		up[]={-0.51629162,0.74863827,-0.41591078};
-		aside[]={-0.6273427,9.9884346e-008,0.77875298};
+		pos[]={411.56088,110.27864,7244.9233};
+		dir[]={-0.38427559,-0.49349514,-0.78031695};
+		up[]={-0.21803829,0.86972779,-0.44275397};
+		aside[]={-0.89715844,8.4008207e-007,0.4418138};
 	};
 };
 binarizationWanted=0;
@@ -5178,7 +5178,7 @@ class Mission
 		startWind=0.1;
 		startWaves=0.1;
 		forecastWeather=0;
-		forecastFog=0.89890087;
+		forecastFog=0.60096651;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
@@ -5191,7 +5191,7 @@ class Mission
 		hour=11;
 		minute=28;
 		startFogDecay=0.013420276;
-		forecastFogDecay=0.027489392;
+		forecastFogDecay=0.0069650388;
 	};
 	class Entities
 	{
@@ -10671,11 +10671,10 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6772.627,130.31306,765.7298};
-				angles[]={6.2791886,1.3788103,0.023993526};
+				position[]={6772.627,131.09729,765.7298};
+				angles[]={0,1.3788103,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				name="fuelSellPoint_west";
@@ -10683,7 +10682,7 @@ class Mission
 			};
 			id=696;
 			type="Land_BoreSighter_01_F";
-			atlOffset=-0.0060272217;
+			atlOffset=0.77819824;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10713,7 +10712,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={443.80347,97.935226,7224.1079};
+				position[]={443.43552,98.139351,7224.4556};
 				angles[]={0,1.43117,0};
 			};
 			side="Empty";
@@ -10724,7 +10723,7 @@ class Mission
 			};
 			id=699;
 			type="Land_BoreSighter_01_F";
-			atlOffset=0.57745361;
+			atlOffset=0.7477417;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -45312,7 +45311,7 @@ class Mission
 			fillName="SolidFull";
 			a=5;
 			b=10;
-			angle=112.99996;
+			angle=112.99995;
 			id=4725;
 		};
 		class Item376
@@ -70196,7 +70195,7 @@ class Mission
 			};
 			id=5584;
 			type="Land_cargo_house_slum_F";
-			atlOffset=0.040138245;
+			atlOffset=0.040145874;
 		};
 		class Item1172
 		{
