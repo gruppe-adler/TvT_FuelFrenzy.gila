@@ -90,7 +90,7 @@ if (isServer) then {
 
     // basics
     10 setOvercast WEATHER_OVERCAST;
-    10 setFog WEATHER_FOG;
+    // 10 setFog WEATHER_FOG; // for now
     setWind [WEATHER_WIND, WEATHER_WIND, true];
     10 setWindForce 0.1;
 

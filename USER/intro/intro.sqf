@@ -9,7 +9,7 @@ if (didJIP) exitWith {};
 
     [{
 
-        playSound "glitch2";
+        playSound "apo_1";
         [{
             [] spawn {
                 private _display = findDisplay 46;

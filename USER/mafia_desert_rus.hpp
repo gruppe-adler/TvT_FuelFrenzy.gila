@@ -73,6 +73,9 @@ class mafia_desert_rus {
         //Combat Life Saver
         class medic_F: Soldier_F {
             addItemsToVest[] = {
+                LIST_7("rhs_30Rnd_545x39_7N6M_plum_AK"),
+                LIST_2("rhs_mag_rdg2_white"),
+                LIST_2("rhs_mag_rgd5"),
                 LIST_15("ACE_fieldDressing"),
                 LIST_8("ACE_morphine"),
                 LIST_8("ACE_epinephrine"),

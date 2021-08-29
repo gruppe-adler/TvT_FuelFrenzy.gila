@@ -11,43 +11,45 @@ if (isServer) then {
         private _resultInf_west = str (([west, "Players killed"] call grad_points_fnc_getPointsCategory) + ([west, "AI killed"] call grad_points_fnc_getPointsCategory));
         private _resultInf_east = str (([east, "Players killed"] call grad_points_fnc_getPointsCategory) + ([east, "AI killed"] call grad_points_fnc_getPointsCategory));
         private _resultInf_independent = str (([independent, "Players killed"] call grad_points_fnc_getPointsCategory) + ([independent, "AI killed"] call grad_points_fnc_getPointsCategory));
-        private _resultInf_civilian = str (([civilian, "Players killed"] call grad_points_fnc_getPointsCategory) + ([civilian, "AI killed"] call grad_points_fnc_getPointsCategory));
+        // private _resultInf_civilian = str (([civilian, "Players killed"] call grad_points_fnc_getPointsCategory) + ([civilian, "AI killed"] call grad_points_fnc_getPointsCategory));
         // private _resultArmored = ["", "1", "2", "3", "4"];
 
         private _resultSoft_west = str ([west, "VEHICLEKILLED"] call grad_points_fnc_getPointsCategory);
         private _resultSoft_east = str ([east, "VEHICLEKILLED"] call grad_points_fnc_getPointsCategory);
         private _resultSoft_independent = str ([independent, "VEHICLEKILLED"] call grad_points_fnc_getPointsCategory);
-        private _resultSoft_civilian = str ([civilian, "VEHICLEKILLED"] call grad_points_fnc_getPointsCategory);
+        // private _resultSoft_civilian = str ([civilian, "VEHICLEKILLED"] call grad_points_fnc_getPointsCategory);
         // private _resultArmored = ["", "1", "2", "3", "4"];
         private _resultFuel_west = format ["%1", [west] call (compile preprocessFileLineNumbers "USER\getFuelPoints.sqf")];
         private _resultFuel_east = format ["%1", [east] call (compile preprocessFileLineNumbers "USER\getFuelPoints.sqf")];
         private _resultFuel_independent = format ["%1", [independent] call (compile preprocessFileLineNumbers "USER\getFuelPoints.sqf")];
-        private _resultFuel_civilian = format ["%1", [civilian] call (compile preprocessFileLineNumbers "USER\getFuelPoints.sqf")];
+        // private _resultFuel_civilian = format ["%1", [civilian] call (compile preprocessFileLineNumbers "USER\getFuelPoints.sqf")];
 
         private _resultTotalNumber_west = [((parseNumber _resultInf_west) + (parseNumber _resultSoft_west) + (parseNumber _resultFuel_west)), west];
         private _resultTotalNumber_east = [((parseNumber _resultInf_east) + (parseNumber _resultSoft_east) + (parseNumber _resultFuel_east)), east];
         private _resultTotalNumber_independent = [((parseNumber _resultInf_independent) + (parseNumber _resultSoft_independent) + (parseNumber _resultFuel_independent)), independent];
-        private _resultTotalNumber_civilian = [((parseNumber _resultInf_civilian) + (parseNumber _resultSoft_civilian) + (parseNumber _resultFuel_civilian)), civilian];
+        // private _resultTotalNumber_civilian = [((parseNumber _resultInf_civilian) + (parseNumber _resultSoft_civilian) + (parseNumber _resultFuel_civilian)), civilian];
 
         _resultTotalNumber_west params ["_resultTotal_west"];
         _resultTotalNumber_east params ["_resultTotal_east"];
         _resultTotalNumber_independent params ["_resultTotal_independent"];
-        _resultTotalNumber_civilian params ["_resultTotal_civilian"];
+        // _resultTotalNumber_civilian params ["_resultTotal_civilian"];
 
         private _results_west = ["", _resultInf_west, _resultSoft_west, _resultFuel_west, str _resultTotal_west];
         private _results_east = ["", _resultInf_east, _resultSoft_east, _resultFuel_east, str _resultTotal_east];
         private _results_independent = ["", _resultInf_independent, _resultSoft_independent, _resultFuel_independent, str _resultTotal_independent];
-        private _results_civilian = ["", _resultInf_civilian, _resultSoft_civilian, _resultFuel_civilian, str _resultTotal_civilian];
+        // private _results_civilian = ["", _resultInf_civilian, _resultSoft_civilian, _resultFuel_civilian, str _resultTotal_civilian];
 
-        private _totalNumbers = [_resultTotalNumber_west, _resultTotalNumber_east, _resultTotalNumber_independent, _resultTotalNumber_civilian];
+        private _totalNumbers = [_resultTotalNumber_west, _resultTotalNumber_east];
         _totalNumbers sort false;
 
         diag_log ("total numbers server: " + str _totalNumbers);
 
         private _winner = _totalNumbers select 0 select 1;
-        private _draw = _resultTotal_west isEqualTo _resultTotal_east &&
+        private _draw = _resultTotal_west isEqualTo _resultTotal_east;
+                        /* &&
                         _resultTotal_independent isEqualTo _resultTotal_civilian &&
                         _resultTotal_west isEqualTo _resultTotal_civilian;
+                        */
         
         diag_log ("draw is: " + str _draw);
         diag_log ("winner is: " + str _winner);
@@ -71,7 +73,7 @@ if (isServer) then {
 
 if (hasInterface) then {
 
-    playSound "glitch_end";
+    playSound "apo_2";
     [player, true] call TFAR_fnc_forceSpectator;
     [player, player] call ace_medical_treatment_fnc_fullHeal;
 
@@ -92,9 +94,9 @@ if (hasInterface) then {
     private _iconTotal = "\A3\ui_f\data\igui\cfg\mptable\total_ca.paa";
     // text = "\A3\ui_f\data\igui\cfg\mptable\air_ca.paa";
 
-    private _columns = ["", "Russen", "Italiener", "Chinesen"];
+    private _columns = ["", "Raiders", "Vipers"];
     private _picturePath = ["", _iconInf, _iconSoft, _iconFuel, _iconTotal];
-    private _picturePathDescription = ["", "Infanterie", "Autos", "Treibstoff", "Insgesamt"];
+    private _picturePathDescription = ["", "Infantry", "Cars", "Fuel", "Total"];
 
     private _resultInf_west = str (([west, "Players killed"] call grad_points_fnc_getPointsCategory) + ([west, "AI killed"] call grad_points_fnc_getPointsCategory));
     private _resultInf_east = str (([east, "Players killed"] call grad_points_fnc_getPointsCategory) + ([east, "AI killed"] call grad_points_fnc_getPointsCategory));
@@ -121,21 +123,21 @@ if (hasInterface) then {
     _resultTotalNumber_west params ["_resultTotal_west"];
     _resultTotalNumber_east params ["_resultTotal_east"];
     _resultTotalNumber_independent params ["_resultTotal_independent"];
-    _resultTotalNumber_civilian params ["_resultTotal_civilian"];
+    // _resultTotalNumber_civilian params ["_resultTotal_civilian"];
 
     private _results_west = ["", _resultInf_west, _resultSoft_west, _resultFuel_west, str _resultTotal_west];
     private _results_east = ["", _resultInf_east, _resultSoft_east, _resultFuel_east, str _resultTotal_east];
     private _results_independent = ["", _resultInf_independent, _resultSoft_independent, _resultFuel_independent, str _resultTotal_independent];
     
 
-    private _totalNumbers = [_resultTotalNumber_west, _resultTotalNumber_east, _resultTotalNumber_independent];
+    private _totalNumbers = [_resultTotalNumber_west, _resultTotalNumber_east];
     _totalNumbers sort false;
 
     // hint str _totalNumbers;
 
     private _winner = _totalNumbers select 0 select 1;
-    private _draw = _resultTotal_west isEqualTo _resultTotal_east &&
-                    _resultTotal_independent isEqualTo _resultTotal_west;
+    private _draw = _resultTotal_west isEqualTo _resultTotal_east;
+                     /* && _resultTotal_independent isEqualTo _resultTotal_west;*/
                     
 
     private _display = findDisplay 46 createDisplay "RscDisplayEmpty";
@@ -146,8 +148,8 @@ if (hasInterface) then {
     private _resultText = "Draw!";
     if (!_draw) then {
         switch (_winner) do { 
-            case west : { _resultText = "Russ. Mafia wins";  }; 
-            case east : {  _resultText = "Ital. Mafia wins";  }; 
+            case west : { _resultText = "Raiders win";  }; 
+            case east : {  _resultText = "Vipers win";  }; 
             case independent : { _resultText = "Chin. Mafia wins";   };
             default {}; 
         };
@@ -173,7 +175,7 @@ if (hasInterface) then {
 
 
 
-    for "_i" from 1 to 5 do {
+    for "_i" from 1 to 3 do {
 
         private _multiplicator = _i * 5;
 
@@ -250,6 +252,7 @@ if (hasInterface) then {
                     _subline ctrlCommit 0;
                 };
 
+                /*
                 if (_i == 4) then {
                     private _subline = _display ctrlCreate ["RscStructuredText", -1];
                     _subline ctrlsetFont "RobotoCondensedBold";
@@ -264,6 +267,7 @@ if (hasInterface) then {
                     _subline ctrlSetFade _textFadeResult;
                     _subline ctrlCommit 0;
                 };
+                */
 
 
                 private _dividerHeight = if (_j == 4) then { _rowHeight/10 } else { _rowHeight/20 };

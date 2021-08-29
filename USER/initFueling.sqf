@@ -1,3 +1,10 @@
+["BLU_F", "mafia_desert_rus"] call GRAD_Loadout_fnc_FactionSetLoadout;
+["OPF_F", "mafia_desert_ger"] call GRAD_Loadout_fnc_FactionSetLoadout;
+["IND_F", "mafia_desert_ger"] call GRAD_Loadout_fnc_FactionSetLoadout;
+["CIV_F", "mafia_desert_ger"] call GRAD_Loadout_fnc_FactionSetLoadout;
+
+["BLU_GEN_F", "special_forces_w"] call GRAD_Loadout_fnc_FactionSetLoadout;
+
 
 [] call refuel_fnc_addRefuelCargoAction;
 grad_refuel_rate = 10;
@@ -33,7 +40,8 @@ if (hasInterface) then {
         params ["_commandType"];
 
         private _availableCommands = [
-            "endMission"
+            "endMission",
+            "clearFuels"
         ];
 
         private _fnc_default = {
@@ -45,8 +53,21 @@ if (hasInterface) then {
                 ["USER\winstats\showStats.sqf"] remoteExec ["execVM", 0, true];
         };
 
+        private _clearFuels = {
+            {
+                private _fuelStation = _x;
+                _fuelStation setVariable ["ace_refuel_currentFuelCargo", 0, true];
+            } forEach (missionNamespace getVariable ["FF_fuelStations", []]);
+
+
+            {
+                _x setVariable ["ace_refuel_currentFuelCargo", 0, true];   
+            } forEach (missionNamespace getVariable ["FF_fuelTrucks", []]);
+        };
+
         switch (toLower _commandType) do {
             case ("endmission"): _endMission;
+            case ("clearfuels"): _clearFuels;
             default _fnc_default;
         };
 
@@ -224,6 +245,7 @@ if (isServer) then {
             };
 
             // fill up
+            [_fuelStation, 0] call ace_refuel_fnc_makeSource;
             _fuelStation setVariable ["ace_refuel_fuelMaxCargo", _fuelCargo, true];
             _fuelStation setVariable ["ace_refuel_currentFuelCargo", _fuelCargo, true];
             [_fuelStation, _fuelCargo] call ace_refuel_fnc_setFuel;
@@ -244,7 +266,7 @@ if (isServer) then {
         missionNamespace setVariable ["FF_fuelStations", _fuelStations, true];
 
         [] execVM "USER\winstats\checkWinConditions.sqf";
-        [] execVM "USER\loadout\changeLoadoutFactions.sqf";
+        
 
         private _westGroup = createGroup east;
         missionNamespace setVariable ["FF_groupWest", _westGroup, true];
