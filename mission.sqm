@@ -8,7 +8,7 @@ class EditorData
 	toggles=553;
 	class ItemIDProvider
 	{
-		nextID=6047;
+		nextID=6074;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1939;
+		nextID=2003;
 	};
 	class Camera
 	{
-		pos[]={6806.4878,145.91243,700.98407};
-		dir[]={-0.03358439,-0.71829104,0.69493181};
-		up[]={-0.034672827,0.69574273,0.71745384};
-		aside[]={0.99883443,0,0.048271276};
+		pos[]={3731.8665,322.28,4181.4697};
+		dir[]={0.12884901,-0.52062923,-0.84400576};
+		up[]={0.078570984,0.85378277,-0.51466626};
+		aside[]={-0.98854882,-1.3969839e-009,-0.15091537};
 	};
 };
 binarizationWanted=0;
@@ -45,7 +45,6 @@ addons[]=
 	"A3_Characters_F_Kart",
 	"rhs_c_troops",
 	"UK3CB_Factions_TKA_I",
-	"ace_nouniformrestrictions",
 	"A3_Signs_F",
 	"ace_interaction",
 	"ace_cargo",
@@ -5211,7 +5210,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1564;
+		items=1591;
 		class Item0
 		{
 			dataType="Layer";
@@ -77172,6 +77171,1113 @@ class Mission
 			};
 			id=6046;
 			type="Land_ConcreteWell_02_F";
+		};
+		class Item1564
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3484.1956,154.45596,5618.9595};
+				angles[]={0.019996032,5.4454288,0.016002094};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6047;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1565
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3178.2849,87.532028,6718.1953};
+				angles[]={0.012000273,5.4454288,6.2472029};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6048;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1566
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4963.5859,95.78154,7337.5903};
+				angles[]={6.2711854,5.4454288,6.2671871};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6049;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1567
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6070.1064,130.89571,7897.1465};
+				angles[]={-0,5.4454288,6.2631865};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6050;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1568
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7111.4282,83.281036,7736.9434};
+				angles[]={6.2791886,5.4454288,0.0039967569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6051;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1569
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6722.3223,84.644493,7092.5547};
+				angles[]={6.2631865,5.4454288,6.2551923};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6052;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1570
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6645.2617,117.0151,6552.2173};
+				angles[]={6.2113094,5.4454288,6.2033539};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6053;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1571
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6545.2676,113.99699,6143.9829};
+				angles[]={6.219274,5.4454288,6.2471995};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6054;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1572
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6582.8804,102.08797,5282.563};
+				angles[]={6.259192,5.4454288,6.2791886};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6055;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1573
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6966.0547,137.21301,3449.8582};
+				angles[]={0.043971907,5.4454288,0.14301692};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6056;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1574
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7492.0186,118.83419,2921.2644};
+				angles[]={0.043971907,5.4454288,0.21654841};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6057;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1575
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7565.6538,132.15633,2188.8601};
+				angles[]={0.1935488,5.4454288,0.1036253};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6058;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1576
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5329.7236,171.90952,3201.0916};
+				angles[]={0.027995232,5.4454288,0.031990308};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6059;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1577
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5906.2749,122.38455,3770.2712};
+				angles[]={0.031990308,5.4454288,6.2791886};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6060;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1578
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6455.5117,121.95668,4011.2742};
+				angles[]={0.16644484,5.4454288,0.039980642};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6061;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1579
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4667.5327,162.25522,2094.72};
+				angles[]={0.1154815,5.4454288,0.11943002};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6062;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1580
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5600.6104,119.13604,1985.7534};
+				angles[]={0.027990974,5.4454288,6.2472029};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6063;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1581
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4481.5205,141.16292,6567.3354};
+				angles[]={6.2631893,5.4454288,0.011995304};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6064;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1582
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5453.2383,96.143349,7277.3862};
+				angles[]={6.2711902,5.4454288,0.059928458};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6065;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1583
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6576.6772,98.434517,7785.1499};
+				angles[]={6.215291,5.4454288,6.2113094};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6066;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1584
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5452.4517,162.74336,4962.2568};
+				angles[]={6.2073302,5.4454288,0.071879126};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6067;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1585
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5876.2817,135.02652,5087.938};
+				angles[]={0.22796793,4.4156847,6.1874762};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6068;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1586
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5234.2563,189.01918,5401.2153};
+				angles[]={6.1401687,4.4156847,6.2312298};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6069;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1587
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4469.1602,199.26985,5223.2437};
+				angles[]={6.2073364,4.4156847,0.047960676};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6070;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1588
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4465.4907,233.49777,4494.8428};
+				angles[]={-0,4.4156847,5.9990859};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6071;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1589
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5111.3267,194.06712,4432.4614};
+				angles[]={0.13516936,4.4156847,5.872036};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6072;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1590
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1947.1221,146.11726,5231.2671};
+				angles[]={0.027995232,4.4156847,6.2472029};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+				textures="AD";
+			};
+			id=6073;
+			type="UK3CB_UN_I_Pickup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
